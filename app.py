@@ -1,4 +1,3 @@
---- FILE: app.py ---
 """
 Single-file Flask application. Contains models, auth, admin, API endpoints, and templates.
 This file is intentionally self-contained for quick testing. In production, split into
@@ -62,4 +61,5 @@ timestamp = db.Column(db.DateTime, default=datetime.utcnow)
 latitude = db.Column(db.Float, nullable=True)
 longitude = db.Column(db.Float, nullable=True)
 ph = db.Column(db.Float, nullable=True)
+
 dissolved_oxygen = db.Column(db.Float, nullable=True)
